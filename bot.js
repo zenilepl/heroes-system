@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`:100: Soon`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`100 Soon`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
