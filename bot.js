@@ -49,7 +49,7 @@ const Discord = require("discord.js");
 const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send(:heart: Royal Heroes :heart:  هلا حبي نورت سيرفرنا"), 4000) 
+setTimeout(() => mohamed.send(هلا حبي نورت سيرفنا:heart: Royal Heroes :heart: "), 4000) 
 }
 });
 
