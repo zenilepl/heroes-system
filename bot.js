@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTE1MjA0MTgxMDc4ODM1MjAw.DthtBQ.oumUcqZSBJxDWGtI0pkpopyPn7Y"
       kboosh.on('ready', () => {
         kboosh.user.setGame(`Heroes System`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
@@ -54,3 +53,5 @@ if(mohamed) {
 setTimeout(() => mohamed.send("مرحبا بكم في سيرفر Royale heroes"), 4000) 
 }
 });
+
+kboosh.login(process.env.TOKEN_BOT);
