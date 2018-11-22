@@ -46,7 +46,7 @@ const Discord = require("discord.js");
 });
 
  kboosh.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("514528638289444865");
+const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send("مرحبا بكم في سيرفر Royale heroes"), 4000) 
