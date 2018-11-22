@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`100 Soon`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`:100: Soon`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
@@ -46,7 +46,7 @@ const Discord = require("discord.js");
 });
 
       kboosh.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("ايدي الروم");
+const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send(":heart: Royal Heroes :heart:  هلا حبي نورت سيرفرنا"), 4000) 
