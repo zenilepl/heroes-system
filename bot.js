@@ -44,7 +44,6 @@ const Discord = require("discord.js");
                             }
                           }
 });
-kboosh.login(kbooshtoken);
 
  kboosh.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514528638289444865");
