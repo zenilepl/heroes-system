@@ -45,11 +45,11 @@ const Discord = require("discord.js");
                           }
 });
 
- kboosh.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("514389881653428227");
+      kboosh.on('guildMemberAdd', member => {
+const mohamed= member.guild.channels.get("ايدي الروم");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send(هلا حبي نورت سيرفنا:heart: Royal Heroes :heart: "), 4000) 
+setTimeout(() => mohamed.send(":heart: Royal Heroes :heart:  هلا حبي نورت سيرفرنا"), 4000) 
 }
 });
 
