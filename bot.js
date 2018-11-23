@@ -6,7 +6,7 @@ client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-  kboosh.on('message', message => {
+  client.on('message', message => {
     if (message.content.split(' ')[0] == '=bc')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -18,7 +18,7 @@ client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
                                                     });
             
                                                   });
-   kboosh.on("message", message => {
+   client.on("message", message => {
        var prefix = "%";
  
              var args = message.content.substring(prefix.length).split(" ");
@@ -44,12 +44,14 @@ client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
                             }
                           }
 });
-kboosh.login(process.env.TOKEN_BOT);
 
-      kboosh.on('guildMemberAdd', member => {
+
+      client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send(" هلا حبي نورت سيرفرنا :heart: Royal Heroes :heart:"), 4000) 
 }
 });
+
+client.login(process.env.BOT_TOKEN);
