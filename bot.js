@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "NTE1MjA0MTgxMDc4ODM1MjAw.Dtn8wQ.0IL4QtGzVvI0-epR4fGmkRqB7p0"
+    const kbooshtoken = "TOKEN_BOT"
       kboosh.on('ready', () => {
         kboosh.user.setGame(`100 soon``,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
@@ -45,7 +45,7 @@ const Discord = require("discord.js");
                             }
                           }
 });
-kboosh.login(kbooshtoken);
+kboosh.login(process.env.TOKEN_BOT);
 
       client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514389881653428227");
