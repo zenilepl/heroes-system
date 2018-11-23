@@ -47,12 +47,10 @@ const Discord = require("discord.js");
 });
 kboosh.login(kbooshtoken);
 
-      kboosh.on('guildMemberAdd', member => {
+      client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send("هلا حبي نورت سيرفرنا :heart: Royal Heroes :heart:"), 4000) 
+setTimeout(() => mohamed.send(" هلا حبي نورت سيرفرنا :heart: Royal Heroes :heart:"), 4000) 
 }
 });
-
-kboosh.login(process.env.TOKEN_BOT);
