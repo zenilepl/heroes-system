@@ -47,7 +47,7 @@ const Discord = require("discord.js");
 });
 kboosh.login(process.env.TOKEN_BOT);
 
-      client.on('guildMemberAdd', member => {
+      kboosh.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
