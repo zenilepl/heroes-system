@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
     const kbooshtoken = "TOKEN_BOT"
-      kboosh.on('ready', () => {
-        kboosh.user.setGame(`100 soon``,'https://www.twitch.tv/TEST-Broadcast');
-          console.log('Im Ready!');
+client.on('ready', () => {
+client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
+    client.user.setStatus("dnd")
   
         });
 
