@@ -1,4 +1,4 @@
-client.on('message',async message => {
+kboosh.on('message',async message => {
   if(message.author.bot || message.channel.type === '=bc') return;
   let args = message.content.split(' ');
   if(args[0] === `=bc`) {
@@ -23,7 +23,7 @@ client.on('message',async message => {
     });
   }
 });
-      client.on('guildMemberAdd', member => {
+      kboosh.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("514389881653428227");
 if(!mohamed) return;
 if(mohamed) {
