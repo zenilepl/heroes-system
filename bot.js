@@ -1,11 +1,10 @@
-const Discord = require("discord.js");
-  const kboosh = new Discord.Client();
-    const kbooshtoken = "TOKEN_BOT"
+const Discord = require('discord.js');
+const client = new Discord.Client();
 client.on('ready', () => {
 client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
-  
-        });
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
   kboosh.on('message', message => {
     if (message.content.split(' ')[0] == '=bc')
