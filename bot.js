@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
-client.user.setGame(`BroadCast`,"http://twitch.tv/y04zgamer")
+client.user.setGame(`100 soon`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
   console.log(`Logged in as ${client.user.tag}!`);
 });
