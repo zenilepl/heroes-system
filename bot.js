@@ -82,6 +82,4 @@ setTimeout(() => mohamed.send(" هلا حبي نورت سيرفرنا :heart: Ro
 }
 });
 
-client.on('ready',async () => { client.channels.find(ch => ch.id === "515214800565829653" && ch.type === 'voice').join(); });
-
 client.login(process.env.BOT_TOKEN);
