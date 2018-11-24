@@ -56,7 +56,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`Zenilepl`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`100 soon`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
