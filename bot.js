@@ -110,6 +110,7 @@ client.on('message', message => {
        
 });
 
+const.prefix = "=";
 client.on('message', msg => {
     var prefix = "=";
   if (msg.author.bot) return;
