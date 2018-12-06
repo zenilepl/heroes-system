@@ -135,4 +135,38 @@ client.on('message', msg => {
 }
 });
 
+client.on('message', message => {
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id !== '321792845914570764') return;
+
+if (message.content.startsWith(prefix + 'g')) {
+  client.user.setGame(argresult);
+          message.channel.send(`**✅ : ${argresult}**`)
+} else 
+
+if (message.content.startsWith(prefix + 'w')) {
+client.user.setActivity(argresult, {type:'WATCHING'});
+          message.channel.send(`**✅ : ${argresult}**`)
+} else 
+if (message.content.startsWith(prefix + 'l')) {
+client.user.setActivity(argresult, {type:'LISTENING'});
+          message.channel.send(`**✅ : ${argresult}**`)
+} else 
+
+if (message.content.startsWith(prefix + 's')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/Justin-Ly0001");
+          message.channel.send(`**✅ : ${argresult}**`)
+}
+  if (message.content.startsWith(prefix + 'setname')) {
+  client.user.setUsername(argresult).then
+      message.channel.send(`**✅ : ${argresult}** `)
+} else
+if (message.content.startsWith(prefix + 'setava')) {
+  client.user.setAvatar(argresult);
+    message.channel.send(`**✅ : ${argresult}** `);
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
