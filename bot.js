@@ -10,10 +10,9 @@ client.on('ready', () => {
 
 
 
-
+    var prefix = "-";
 
 client.on('message', message => {
-    var prefix = "-";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -83,7 +82,7 @@ setTimeout(() => mohamed.send(" هلا حبي نورت سيرفرنا :heart: Ro
 });
 
 client.on('message', message => {
-    var prefix = "=";
+    var prefix = "-";
        if(message.content === prefix + "cl") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
@@ -111,7 +110,7 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-    var prefix = "=";
+    var prefix = "-";
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
   let command = msg.content.split(" ")[0];
